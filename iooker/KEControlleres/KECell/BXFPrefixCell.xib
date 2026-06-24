@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="zHU-8b-YnR" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="kEV-g2-wz9" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="401" id="XCE-kg-6Ps" customClass="BXFPrefixCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="507" height="401"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XCE-kg-6Ps" id="bqg-Ie-pA2">
+                <rect key="frame" x="0.0" y="0.0" width="507" height="401"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="绘画头" translatesAutoresizingMaskIntoConstraints="NO" id="g0b-Rx-V4O" customClass="YYAnimatedImageView">
+                        <rect key="frame" x="16" y="12" width="358" height="358"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="g0b-Rx-V4O" secondAttribute="height" multiplier="1:1" id="zH5-bl-MnO"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yae-Qx-Rzx">
+                        <rect key="frame" x="425" y="327" width="41" height="41"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40.99" id="HID-ft-BkN"/>
+                            <constraint firstAttribute="width" constant="41.02" id="azW-JT-mLb"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="textCenterGundong"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="20.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="deleteClick:" destination="XCE-kg-6Ps" eventType="touchUpInside" id="2Tq-EP-Bhh"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sr-IY-H0g">
+                        <rect key="frame" x="425" y="246" width="41" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40.99" id="Anq-WQ-ziV"/>
+                            <constraint firstAttribute="height" constant="41.02" id="FhW-SW-1by"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="tableBegin"/>
+                        <connections>
+                            <action selector="download:" destination="XCE-kg-6Ps" eventType="touchUpInside" id="Hnc-qZ-0Mh"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZE-5k-1d8">
+                        <rect key="frame" x="16" y="12" width="358" height="358"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="tapImage:" destination="XCE-kg-6Ps" eventType="touchUpInside" id="qLF-Mb-E0w"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="g0b-Rx-V4O" firstAttribute="top" secondItem="bqg-Ie-pA2" secondAttribute="top" constant="11.97" id="o9d-50-lpm"/>
+                    <constraint firstAttribute="trailing" secondItem="g0b-Rx-V4O" secondAttribute="trailing" constant="125.98" id="anO-gs-2ti"/>
+                    <constraint firstItem="g0b-Rx-V4O" firstAttribute="leading" secondItem="bqg-Ie-pA2" secondAttribute="leading" constant="16.04" id="NBs-mf-MLH"/>
+                    <constraint firstAttribute="trailing" secondItem="Yae-Qx-Rzx" secondAttribute="trailing" constant="41.02" id="oAF-IO-IbZ"/>
+                    <constraint firstItem="sZE-5k-1d8" firstAttribute="leading" secondItem="g0b-Rx-V4O" secondAttribute="leading" id="kEr-Yv-Pw3"/>
+                    <constraint firstItem="sZE-5k-1d8" firstAttribute="top" secondItem="g0b-Rx-V4O" secondAttribute="top" id="dFT-gE-N8N"/>
+                    <constraint firstItem="sZE-5k-1d8" firstAttribute="trailing" secondItem="g0b-Rx-V4O" secondAttribute="trailing" id="4AA-pC-YGr"/>
+                    <constraint firstItem="Yae-Qx-Rzx" firstAttribute="top" secondItem="6sr-IY-H0g" secondAttribute="bottom" constant="40.01" id="q1b-rk-Y2L"/>
+                    <constraint firstAttribute="trailing" secondItem="6sr-IY-H0g" secondAttribute="trailing" constant="41.01" id="uM3-K6-SYj"/>
+                    <constraint firstAttribute="bottom" secondItem="g0b-Rx-V4O" secondAttribute="bottom" constant="16.98" id="EnB-NQ-XxW"/>
+                    <constraint firstItem="sZE-5k-1d8" firstAttribute="bottom" secondItem="g0b-Rx-V4O" secondAttribute="bottom" id="2Jg-bK-x5x"/>
+                    <constraint firstAttribute="bottom" secondItem="Yae-Qx-Rzx" secondAttribute="bottom" constant="19.01" id="rNA-Vc-oTq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="SKS-y8-wpW"/>
+            <connections>
+                <outlet property="picImage" destination="g0b-Rx-V4O" id="OSf-IU-B0E"/>
+            </connections>
+            <point key="canvasLocation" x="140.76923076923077" y="114.81042654028435"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tableBegin" width="41" height="41"/>
+        <image name="textCenterGundong" width="19" height="20"/>
+        <image name="绘画头" width="358" height="223"/>
+    </resources>
+</document>
