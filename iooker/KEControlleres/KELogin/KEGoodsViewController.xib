@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KEGoodsViewController" customModule="iooker" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHK-hq-KrI">
+                    <rect key="frame" x="43.666666666666657" y="216" width="305.66666666666674" height="380"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applogoWelcomeHeaderr" translatesAutoresizingMaskIntoConstraints="NO" id="p0z-gF-kQZ">
+                            <rect key="frame" x="7" y="0.0" width="292" height="380"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfx-6x-OHG">
+                            <rect key="frame" x="30.000000000000014" y="298" width="245.66666666666669" height="59"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="58.990000000000002" id="KEo-Yp-mQt"/>
+                                <constraint firstAttribute="width" constant="245.97999999999999" id="QII-Bs-m8c"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="enterClick:" destination="-1" eventType="touchUpInside" id="hSM-MY-S7Y"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="p0z-gF-kQZ" firstAttribute="top" secondItem="oHK-hq-KrI" secondAttribute="top" id="5b2-GG-056"/>
+                        <constraint firstAttribute="height" constant="380" id="aag-G0-vzf"/>
+                        <constraint firstAttribute="width" constant="305.98000000000002" id="h5a-lU-cWE"/>
+                        <constraint firstItem="p0z-gF-kQZ" firstAttribute="centerX" secondItem="oHK-hq-KrI" secondAttribute="centerX" id="pTH-bX-RaC"/>
+                        <constraint firstAttribute="bottom" secondItem="qfx-6x-OHG" secondAttribute="bottom" constant="23.02" id="sgG-mK-jNH"/>
+                        <constraint firstItem="qfx-6x-OHG" firstAttribute="centerX" secondItem="oHK-hq-KrI" secondAttribute="centerX" id="yVl-9j-fE8"/>
+                        <constraint firstItem="p0z-gF-kQZ" firstAttribute="centerY" secondItem="oHK-hq-KrI" secondAttribute="centerY" id="zlz-qW-nyf"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMM-bZ-Xff">
+                    <rect key="frame" x="174.33333333333334" y="606" width="44.333333333333343" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44.009999999999998" id="RcG-95-zVc"/>
+                        <constraint firstAttribute="width" constant="44.020000000000003" id="fcp-bt-fWe"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="register_2Copy_6"/>
+                    <connections>
+                        <action selector="closeClick:" destination="-1" eventType="touchUpInside" id="fV2-dV-P5s"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oHK-hq-KrI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-20" id="59e-1i-ggK"/>
+                <constraint firstItem="lMM-bZ-Xff" firstAttribute="centerX" secondItem="oHK-hq-KrI" secondAttribute="centerX" id="h8j-Z2-rlH"/>
+                <constraint firstItem="oHK-hq-KrI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mej-8w-x9A"/>
+                <constraint firstItem="lMM-bZ-Xff" firstAttribute="top" secondItem="oHK-hq-KrI" secondAttribute="bottom" constant="10.050000000000001" id="xb9-Wp-riA"/>
+            </constraints>
+            <point key="canvasLocation" x="44" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="applogoWelcomeHeaderr" width="292" height="379"/>
+        <image name="register_2Copy_6" width="34" height="34"/>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="zHU-8b-YnR" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="kEV-g2-wz9" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Hsz-0j-wSK" customClass="ANPImageView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="142"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="relationItem" translatesAutoresizingMaskIntoConstraints="NO" id="8pE-0C-xVB">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="142"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iwp-Vv-ejg">
+                    <rect key="frame" x="12" y="16" width="366" height="90"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AI对话" translatesAutoresizingMaskIntoConstraints="NO" id="hJE-vg-5KC">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="90"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hJE-vg-5KC" firstAttribute="top" secondItem="Iwp-Vv-ejg" secondAttribute="top" id="qqZ-JK-ft7"/>
+                        <constraint firstAttribute="height" constant="90.01" id="FsS-xR-x6D"/>
+                        <constraint firstItem="hJE-vg-5KC" firstAttribute="leading" secondItem="Iwp-Vv-ejg" secondAttribute="leading" id="IBv-UU-mj9"/>
+                        <constraint firstAttribute="trailing" secondItem="hJE-vg-5KC" secondAttribute="trailing" id="UEU-D8-rHB"/>
+                        <constraint firstAttribute="bottom" secondItem="hJE-vg-5KC" secondAttribute="bottom" id="LG2-hu-cCk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="8pE-0C-xVB" firstAttribute="top" secondItem="Hsz-0j-wSK" secondAttribute="top" id="pqY-kW-GyS"/>
+                <constraint firstAttribute="trailing" secondItem="8pE-0C-xVB" secondAttribute="trailing" id="gGu-Gp-P8v"/>
+                <constraint firstItem="Iwp-Vv-ejg" firstAttribute="top" secondItem="Hsz-0j-wSK" secondAttribute="top" constant="15.98" id="dJm-If-ANj"/>
+                <constraint firstAttribute="trailing" secondItem="Iwp-Vv-ejg" secondAttribute="trailing" constant="12.02" id="BKL-9v-HSS"/>
+                <constraint firstItem="8pE-0C-xVB" firstAttribute="leading" secondItem="Hsz-0j-wSK" secondAttribute="leading" id="3JR-xl-NB9"/>
+                <constraint firstItem="Iwp-Vv-ejg" firstAttribute="leading" secondItem="Hsz-0j-wSK" secondAttribute="leading" constant="12.01" id="9Jk-6X-TWs"/>
+                <constraint firstAttribute="bottom" secondItem="8pE-0C-xVB" secondAttribute="bottom" id="ZEJ-g5-Xza"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.76923076923077" y="237.44075829383885"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AI对话" width="362" height="90"/>
+        <image name="relationItem" width="390" height="211"/>
+    </resources>
+</document>

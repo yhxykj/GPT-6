@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="zHU-8b-YnR" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="kEV-g2-wz9" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U9F-sy-tWj" customClass="TAboutCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gundongMainDetails" translatesAutoresizingMaskIntoConstraints="NO" id="CvP-XP-WI0">
+                        <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u66-Sg-MVs">
+                        <rect key="frame" x="22" y="608" width="344" height="88"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="88.01" id="3up-qS-4my"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="Xih-yf-QYC"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="u66-Sg-MVs" secondAttribute="trailing" constant="21.99" id="IaU-3m-yuT"/>
+                <constraint firstAttribute="bottom" secondItem="u66-Sg-MVs" secondAttribute="bottom" constant="15.98" id="xaW-PZ-rTv"/>
+                <constraint firstItem="CvP-XP-WI0" firstAttribute="top" secondItem="U9F-sy-tWj" secondAttribute="top" id="exN-aP-OQI"/>
+                <constraint firstItem="u66-Sg-MVs" firstAttribute="centerX" secondItem="U9F-sy-tWj" secondAttribute="centerX" id="JS8-eu-c5e"/>
+                <constraint firstItem="u66-Sg-MVs" firstAttribute="leading" secondItem="U9F-sy-tWj" secondAttribute="leading" constant="21.98" id="wQf-BI-WK5"/>
+                <constraint firstAttribute="trailing" secondItem="CvP-XP-WI0" secondAttribute="trailing" id="SVe-y9-y2a"/>
+                <constraint firstItem="CvP-XP-WI0" firstAttribute="leading" secondItem="U9F-sy-tWj" secondAttribute="leading" id="8wH-fF-z0b"/>
+                <constraint firstAttribute="bottom" secondItem="CvP-XP-WI0" secondAttribute="bottom" id="uYj-Iw-wAc"/>
+            </constraints>
+            <size key="customSize" width="388" height="712"/>
+            <connections>
+                <outlet property="Icon" destination="CvP-XP-WI0" id="JOZ-RU-qnK"/>
+                <outlet property="button" destination="u66-Sg-MVs" id="YdW-zv-ub5"/>
+            </connections>
+            <point key="canvasLocation" x="219.84732824427479" y="36.619718309859159"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gundongMainDetails" width="390" height="844"/>
+    </resources>
+</document>
