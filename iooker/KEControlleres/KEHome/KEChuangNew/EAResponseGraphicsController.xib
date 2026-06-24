@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="zHU-8b-YnR" userLabel="File's Owner" customClass="EAResponseGraphicsController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="oYP-0F-39u" id="J3y-ir-Z9L"/>
+                <outlet property="nav_label" destination="PW4-Fi-sg9" id="xeu-iP-zL9"/>
+                <outlet property="view" destination="7ty-cM-jSf" id="xBi-2E-EbK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="kEV-g2-wz9" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="7ty-cM-jSf">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lj2-ay-l7G">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBv-tW-Kny">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54.96" id="xaD-sY-zfg"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="collectionPopupPrefix_fj"/>
+                            <connections>
+                                <action selector="back:" destination="zHU-8b-YnR" eventType="touchUpInside" id="WWC-4z-rXg"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PW4-Fi-sg9">
+                            <rect key="frame" x="174" y="11.666666666666664" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="pBv-tW-Kny" firstAttribute="leading" secondItem="lj2-ay-l7G" secondAttribute="leading" id="gjf-5T-Dn6"/>
+                        <constraint firstAttribute="bottom" secondItem="pBv-tW-Kny" secondAttribute="bottom" id="z05-eO-027"/>
+                        <constraint firstItem="PW4-Fi-sg9" firstAttribute="centerX" secondItem="lj2-ay-l7G" secondAttribute="centerX" id="Wks-h2-zYS"/>
+                        <constraint firstAttribute="height" constant="43.98" id="YKv-hv-vJb"/>
+                        <constraint firstItem="pBv-tW-Kny" firstAttribute="top" secondItem="lj2-ay-l7G" secondAttribute="top" id="76a-2k-KYq"/>
+                        <constraint firstItem="PW4-Fi-sg9" firstAttribute="centerY" secondItem="lj2-ay-l7G" secondAttribute="centerY" id="csB-V6-dc8"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="oYP-0F-39u">
+                    <rect key="frame" x="0.0" y="91" width="390" height="625"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zQY-Kd-ym1">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="zHU-8b-YnR" id="bdC-Nt-7ka"/>
+                        <outlet property="delegate" destination="zHU-8b-YnR" id="8yM-ct-w8T"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlW-pk-T5o">
+                    <rect key="frame" x="16" y="741" width="358" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="loginModity"/>
+                    <connections>
+                        <action selector="done:" destination="zHU-8b-YnR" eventType="touchUpInside" id="zSP-RF-KyZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="NJc-sE-xMu"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NJc-sE-xMu" firstAttribute="trailing" secondItem="oYP-0F-39u" secondAttribute="trailing" id="MPF-50-qBa"/>
+                <constraint firstItem="NJc-sE-xMu" firstAttribute="trailing" secondItem="lj2-ay-l7G" secondAttribute="trailing" id="lYH-Mz-NtL"/>
+                <constraint firstItem="lj2-ay-l7G" firstAttribute="top" secondItem="NJc-sE-xMu" secondAttribute="top" id="iWt-cW-mJh"/>
+                <constraint firstItem="wlW-pk-T5o" firstAttribute="top" secondItem="oYP-0F-39u" secondAttribute="bottom" constant="25.01" id="esq-Gw-a9j"/>
+                <constraint firstItem="wlW-pk-T5o" firstAttribute="leading" secondItem="NJc-sE-xMu" secondAttribute="leading" constant="15.98" id="MWP-mL-OCB"/>
+                <constraint firstItem="oYP-0F-39u" firstAttribute="top" secondItem="lj2-ay-l7G" secondAttribute="bottom" id="pYD-Zb-R27"/>
+                <constraint firstItem="NJc-sE-xMu" firstAttribute="bottom" secondItem="wlW-pk-T5o" secondAttribute="bottom" constant="14.98" id="Nph-X4-3nr"/>
+                <constraint firstItem="NJc-sE-xMu" firstAttribute="trailing" secondItem="wlW-pk-T5o" secondAttribute="trailing" constant="16.02" id="VUK-9w-0LZ"/>
+                <constraint firstItem="lj2-ay-l7G" firstAttribute="leading" secondItem="NJc-sE-xMu" secondAttribute="leading" id="X6g-dQ-kyy"/>
+                <constraint firstItem="oYP-0F-39u" firstAttribute="leading" secondItem="NJc-sE-xMu" secondAttribute="leading" id="5rJ-r8-zVR"/>
+            </constraints>
+            <point key="canvasLocation" x="125" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginModity" width="358" height="54"/>
+        <image name="collectionPopupPrefix_fj" width="10" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="zHU-8b-YnR" userLabel="File's Owner" customClass="NPopupRecordsController" customModule="iooker" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="baT-i5-25c" id="0jN-1g-uDW"/>
+                <outlet property="view" destination="7ty-cM-jSf" id="xBi-2E-EbK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="kEV-g2-wz9" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="7ty-cM-jSf">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="baT-i5-25c">
+                    <rect key="frame" x="0.0" y="47" width="390" height="681"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="zHU-8b-YnR" id="hkZ-DM-fLl"/>
+                        <outlet property="delegate" destination="zHU-8b-YnR" id="X2w-YK-TlG"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KB6-7W-LG8">
+                    <rect key="frame" x="16" y="748" width="358" height="52"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="relationReusable"/>
+                    <connections>
+                        <action selector="Begin:" destination="zHU-8b-YnR" eventType="touchUpInside" id="mbR-oq-FKe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="NJc-sE-xMu"/>
+            <constraints>
+                <constraint firstItem="NJc-sE-xMu" firstAttribute="bottom" secondItem="KB6-7W-LG8" secondAttribute="bottom" constant="10.02" id="5Yl-pi-7TA"/>
+                <constraint firstItem="NJc-sE-xMu" firstAttribute="trailing" secondItem="baT-i5-25c" secondAttribute="trailing" id="6sx-vN-T8D"/>
+                <constraint firstItem="KB6-7W-LG8" firstAttribute="top" secondItem="baT-i5-25c" secondAttribute="bottom" constant="20.010000000000002" id="FxW-Au-ZlE"/>
+                <constraint firstItem="KB6-7W-LG8" firstAttribute="centerX" secondItem="7ty-cM-jSf" secondAttribute="centerX" id="N0D-BZ-6aN"/>
+                <constraint firstItem="baT-i5-25c" firstAttribute="leading" secondItem="NJc-sE-xMu" secondAttribute="leading" id="Yzl-p2-gKy"/>
+                <constraint firstItem="baT-i5-25c" firstAttribute="top" secondItem="NJc-sE-xMu" secondAttribute="top" id="bAn-II-TNd"/>
+            </constraints>
+            <point key="canvasLocation" x="130.76923076923077" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="relationReusable" width="358" height="52"/>
+    </resources>
+</document>

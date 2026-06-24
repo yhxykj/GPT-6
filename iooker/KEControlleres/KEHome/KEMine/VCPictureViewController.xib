@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VCPictureViewController" customModule="iooker" customModuleProvider="target">
+            <connections>
+                <outlet property="pictureImg" destination="vDY-UC-vLI" id="VzF-ah-FF5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKZ-td-BSc">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYq-po-r5G">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54.979999999999997" id="0wC-3s-2rq"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="collectionPopupPrefix_fj"/>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="rrb-ak-Q1V"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传评价截图" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PD-ck-T23">
+                            <rect key="frame" x="144.66666666666666" y="11.333333333333329" width="104" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43.990000000000002" id="2SX-8Y-XgC"/>
+                        <constraint firstAttribute="bottom" secondItem="sYq-po-r5G" secondAttribute="bottom" id="934-6Z-ke7"/>
+                        <constraint firstItem="8PD-ck-T23" firstAttribute="centerY" secondItem="OKZ-td-BSc" secondAttribute="centerY" id="BnJ-Tm-xL6"/>
+                        <constraint firstItem="sYq-po-r5G" firstAttribute="leading" secondItem="OKZ-td-BSc" secondAttribute="leading" id="kLP-ma-Pai"/>
+                        <constraint firstItem="8PD-ck-T23" firstAttribute="centerX" secondItem="OKZ-td-BSc" secondAttribute="centerX" id="ngT-Iv-jdl"/>
+                        <constraint firstItem="sYq-po-r5G" firstAttribute="top" secondItem="OKZ-td-BSc" secondAttribute="top" id="zFb-ZC-CGP"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="示例：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob6-ec-RQU">
+                    <rect key="frame" x="23" y="114" width="52" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="aVC-BI-gr5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shiliicon" translatesAutoresizingMaskIntoConstraints="NO" id="N3O-aY-cTJ">
+                    <rect key="frame" x="11" y="144" width="371" height="267"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传评价截图：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7Z-OC-nX0">
+                    <rect key="frame" x="22.999999999999993" y="435" width="121.33333333333331" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="qTr-rg-dAq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="审核通过后我们将为您赠送问答次数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4S-qk-Lo3">
+                    <rect key="frame" x="22.999999999999986" y="464" width="228.66666666666663" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tianjiatupian" translatesAutoresizingMaskIntoConstraints="NO" id="vDY-UC-vLI">
+                    <rect key="frame" x="23" y="497" width="119" height="119"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="119" id="Eks-TS-fqB"/>
+                        <constraint firstAttribute="height" constant="119" id="ztG-b0-1xo"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="58E-ao-Gk4" appends="YES" id="z2W-oK-Chm"/>
+                    </connections>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxR-b8-KMU">
+                    <rect key="frame" x="23" y="714" width="347" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="tijioashenhe"/>
+                    <connections>
+                        <action selector="confirmClick:" destination="-1" eventType="touchUpInside" id="KXc-tl-eU5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="N3O-aY-cTJ" firstAttribute="top" secondItem="ob6-ec-RQU" secondAttribute="bottom" constant="6" id="85H-cQ-eKk"/>
+                <constraint firstItem="OKZ-td-BSc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CbD-HH-H8n"/>
+                <constraint firstItem="ob6-ec-RQU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="D0B-as-0yy"/>
+                <constraint firstItem="YxR-b8-KMU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="DGz-r9-TCS"/>
+                <constraint firstItem="OKZ-td-BSc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Fow-7c-RGh"/>
+                <constraint firstItem="vDY-UC-vLI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="IJy-2U-M39"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YxR-b8-KMU" secondAttribute="trailing" constant="23" id="JeE-dL-dlI"/>
+                <constraint firstItem="vDY-UC-vLI" firstAttribute="top" secondItem="v4S-qk-Lo3" secondAttribute="bottom" constant="16" id="LGP-n5-NWO"/>
+                <constraint firstItem="ob6-ec-RQU" firstAttribute="top" secondItem="OKZ-td-BSc" secondAttribute="bottom" constant="11" id="MVe-db-r3H"/>
+                <constraint firstItem="H7Z-OC-nX0" firstAttribute="top" secondItem="N3O-aY-cTJ" secondAttribute="bottom" constant="24" id="VIF-2a-O0a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N3O-aY-cTJ" secondAttribute="trailing" constant="11" id="aUq-mm-3YZ"/>
+                <constraint firstItem="v4S-qk-Lo3" firstAttribute="top" secondItem="H7Z-OC-nX0" secondAttribute="bottom" constant="5" id="bqI-jS-voY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YxR-b8-KMU" secondAttribute="bottom" constant="50" id="eYi-vC-rLb"/>
+                <constraint firstItem="H7Z-OC-nX0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="j2k-Jx-f3O"/>
+                <constraint firstItem="N3O-aY-cTJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="11" id="oHc-Rb-3LF"/>
+                <constraint firstItem="v4S-qk-Lo3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="q8k-Qv-vns"/>
+                <constraint firstAttribute="trailing" secondItem="OKZ-td-BSc" secondAttribute="trailing" id="xwz-Ak-51w"/>
+            </constraints>
+            <point key="canvasLocation" x="61.832061068702288" y="-11.267605633802818"/>
+        </view>
+        <tapGestureRecognizer id="58E-ao-Gk4">
+            <connections>
+                <action selector="tapPictureClick:" destination="-1" id="Kxg-hc-dgy"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="collectionPopupPrefix_fj" width="10" height="17"/>
+        <image name="shiliicon" width="368" height="267"/>
+        <image name="tianjiatupian" width="119" height="119"/>
+        <image name="tijioashenhe" width="343" height="54"/>
+    </resources>
+</document>

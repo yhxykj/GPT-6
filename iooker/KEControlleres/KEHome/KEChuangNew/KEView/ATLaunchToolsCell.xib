@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="zHU-8b-YnR" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="kEV-g2-wz9" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="XCE-kg-6Ps" customClass="ATLaunchToolsCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XCE-kg-6Ps" id="bqg-Ie-pA2">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVg-DV-e93">
+                        <rect key="frame" x="36" y="37" width="37.333333333333343" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="class_8ToolsMine" translatesAutoresizingMaskIntoConstraints="NO" id="SrQ-CQ-dhR">
+                        <rect key="frame" x="264" y="36" width="20" height="20"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SrQ-CQ-dhR" secondAttribute="trailing" constant="35.98" id="Nra-hV-qPe"/>
+                    <constraint firstItem="gVg-DV-e93" firstAttribute="leading" secondItem="bqg-Ie-pA2" secondAttribute="leading" constant="35.99" id="7bH-nD-WOw"/>
+                    <constraint firstItem="SrQ-CQ-dhR" firstAttribute="centerY" secondItem="bqg-Ie-pA2" secondAttribute="centerY" id="s15-wo-D9K"/>
+                    <constraint firstItem="gVg-DV-e93" firstAttribute="centerY" secondItem="bqg-Ie-pA2" secondAttribute="centerY" id="huW-tk-A2C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="SKS-y8-wpW"/>
+            <connections>
+                <outlet property="label" destination="gVg-DV-e93" id="klB-Mr-3NR"/>
+                <outlet property="s_icon" destination="SrQ-CQ-dhR" id="Esy-vY-7hA"/>
+            </connections>
+            <point key="canvasLocation" x="130.76923076923077" y="-29.14691943127962"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="class_8ToolsMine" width="20" height="20"/>
+    </resources>
+</document>

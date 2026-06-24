@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="zHU-8b-YnR" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="kEV-g2-wz9" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XCE-kg-6Ps" customClass="XZGraphicsCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XCE-kg-6Ps" id="bqg-Ie-pA2">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4M-MC-8bg">
+                        <rect key="frame" x="227" y="12" width="78" height="44"/>
+                        <color key="backgroundColor" red="0.45490196078431372" green="0.90196078431372551" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efr-6n-rm2">
+                        <rect key="frame" x="248" y="25" width="36" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="i4M-MC-8bg" firstAttribute="leading" secondItem="efr-6n-rm2" secondAttribute="leading" constant="-21" id="F5E-uC-1i7"/>
+                    <constraint firstItem="efr-6n-rm2" firstAttribute="top" secondItem="bqg-Ie-pA2" secondAttribute="top" constant="25.01" id="5BV-Ms-JMQ"/>
+                    <constraint firstItem="efr-6n-rm2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bqg-Ie-pA2" secondAttribute="leading" constant="55.04" id="n3o-DV-fvr"/>
+                    <constraint firstAttribute="trailing" secondItem="efr-6n-rm2" secondAttribute="trailing" constant="35.99" id="qe2-CS-YvF"/>
+                    <constraint firstAttribute="bottom" secondItem="efr-6n-rm2" secondAttribute="bottom" constant="25.02" id="zfK-gO-nbR"/>
+                    <constraint firstAttribute="bottom" secondItem="i4M-MC-8bg" secondAttribute="bottom" constant="12.02" id="bnf-dx-QTP"/>
+                    <constraint firstAttribute="trailing" secondItem="i4M-MC-8bg" secondAttribute="trailing" constant="15.03" id="nuh-Nr-4AV"/>
+                    <constraint firstItem="i4M-MC-8bg" firstAttribute="top" secondItem="bqg-Ie-pA2" secondAttribute="top" constant="11.96" id="b4q-5Z-8qM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="SKS-y8-wpW"/>
+            <connections>
+                <outlet property="meQlabel" destination="efr-6n-rm2" id="J3t-jJ-DY0"/>
+            </connections>
+            <point key="canvasLocation" x="-9.2307692307692299" y="-11.374407582938389"/>
+        </tableViewCell>
+    </objects>
+</document>
